@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "demo",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "D:\\vuejs\\for_test\\demo\\amplify\\backend\\api\\demo\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authdemob561a36f"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 30,
+        "apiKeyExpirationDate": "2022-04-20T11:51:51.587Z",
+        "keyDescription": "For test"
+      },
+      {
+        "mode": "AWS_IAM"
+      }
+    ]
+  }
+}
