@@ -5,7 +5,8 @@ input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONL
 type Task @model @auth(
     rules: [
       { allow: groups, groups: ["Master"], operations: [create, read, update, delete] }
-      { allow: public, operations: [read], provider: iam }
+      { allow: groups, groups: ["Crew"], operations: [read] }
+      # { allow: private, operations: [read], provider: iam }
     ]
   ) {
   id: ID!

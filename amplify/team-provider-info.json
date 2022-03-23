@@ -13,7 +13,8 @@
     },
     "categories": {
       "auth": {
-        "demob561a36f": {}
+        "demob561a36f": {},
+        "userPoolGroups": {}
       }
     }
   }
